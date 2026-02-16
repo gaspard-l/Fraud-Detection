@@ -34,7 +34,7 @@ Le projet est organisé en trois grandes parties :
 - Normalisation des variables numériques via un pipeline
 La séparation train/test est effectuée avant la normalisation afin d’éviter toute fuite de données (data leakage).
 
-### Premier modèle
+### Premier modèle
 Étapes :
 - Création et entraînement du modèle
 - Prédictions probabilistes
@@ -53,7 +53,7 @@ La séparation train/test est effectuée avant la normalisation afin d’éviter
 Objectif :
 Maximiser la détection des fraudes tout en limitant les faux positifs.
 
-### Deuxième modèle
+### Deuxième modèle
 Même méthodologie :
 - Entraînement
 - Optimisation du seuil
@@ -63,7 +63,7 @@ Une comparaison claire est réalisée afin d’identifier le modèle offrant le 
 
 ---
 
-## Gestion du déséquilibre
+## Gestion du déséquilibre
 Le dataset étant fortement déséquilibré, l’évaluation repose principalement sur :
 - Recall
 - F1-score
@@ -73,7 +73,7 @@ Des techniques comme utilisée des poids (class_weight) pourraient être testée
 
 ---
 
-## Choix Méthodologiques
+## Choix Méthodologiques
 Le seuil de classification n’est pas laissé à 0.5 par défaut. \
 Il est optimisé afin de :
 - Réduire les faux négatifs (fraudes non détectées)
@@ -82,7 +82,7 @@ Ce choix reflète une approche orientée enjeu métier plutôt que purement stat
 
 ---
 
-## Résultats
+## Résultats
 Une comparaison finale met en évidence :
 - Le modèle le plus performant
 - Le compromis recall / precision
