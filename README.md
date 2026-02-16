@@ -112,7 +112,7 @@ cd Fraud-Detection
 ```bash
 conda create -n fraud_env
 conda activate fraud_env
-pip install -r requirements.txt
+conda install -r requirements.txt
 ```
 ### Alternative : environnement virtuel standard
 ```bash
