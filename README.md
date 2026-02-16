@@ -91,7 +91,7 @@ Le modèle retenu est celui offrant le meilleur équilibre pour un contexte de f
 
 ---
 
-## Bibliothèques
+## Bibliothèques
 Projet développé en Python avec :
 - Pandas
 - NumPy
@@ -102,7 +102,7 @@ Projet développé en Python avec :
 
 ---
 
-## Installation
+## Installation
 #### Cloner le repository
 ```bash
 git clone https://github.com/gaspard-l/Fraud-Detection.git
@@ -114,7 +114,7 @@ conda create -n fraud_env
 conda activate fraud_env
 pip install -r requirements.txt
 ```
-### Alternative : environnement virtuel standard
+### Alternative : environnement virtuel standard
 ```bash
 python -m venv venv
 source venv/bin/activate  # Mac/Linux
@@ -129,7 +129,7 @@ fraud_detection.ipynb
 ```
 ---
 
-## Améliorations possibles
+## Améliorations possibles
 - Optimisation des hyperparamètres
 - Déploiement API (Flask / FastAPI)
 - Monitoring des performances dans le temps
