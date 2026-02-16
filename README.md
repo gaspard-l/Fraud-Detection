@@ -16,7 +16,6 @@ L’objectif n’est donc pas seulement d’optimiser l’accuracy, mais de trou
 ---
 
 ## Dataset
-
 - Source : Kaggle Credit Card Fraud Detection
 - Nombre de transactions : 284 807
 - Fraudes : 492 (0.17%)
@@ -24,11 +23,9 @@ L’objectif n’est donc pas seulement d’optimiser l’accuracy, mais de trou
 ---
 
 ## Structure du Notebook
-
 Le projet est organisé en trois grandes parties :
 
 ### Préparation des données
-
 - Importation des bibliothèques
 
 - Chargement du dataset
@@ -43,10 +40,7 @@ Le projet est organisé en trois grandes parties :
 
 La séparation train/test est effectuée avant la normalisation afin d’éviter toute fuite de données (data leakage).
 
----
-
 ### Premier modèle
-
 Étapes :
 
 - Création et entraînement du modèle
@@ -79,10 +73,7 @@ Objectif :
 
 Maximiser la détection des fraudes tout en limitant les faux positifs.
 
----
-
 ### Deuxième modèle
-
 Même méthodologie :
 
 - Entraînement
@@ -98,7 +89,6 @@ Une comparaison claire est réalisée afin d’identifier le modèle offrant le 
 ---
 
 ## Gestion du déséquilibre
-
 Le dataset étant fortement déséquilibré, l’évaluation repose principalement sur :
 
 - Recall
@@ -114,7 +104,6 @@ Des techniques comme utilisée des poids (class_weight) pourraient être testée
 ---
 
 ## Choix Méthodologiques
-
 Le seuil de classification n’est pas laissé à 0.5 par défaut.
 
 Il est optimisé afin de :
@@ -128,7 +117,6 @@ Ce choix reflète une approche orientée enjeu métier plutôt que purement stat
 ---
 
 ## Résultats
-
 Une comparaison finale met en évidence :
 
 - Le modèle le plus performant
@@ -142,7 +130,6 @@ Le modèle retenu est celui offrant le meilleur équilibre pour un contexte de f
 ---
 
 ## Bibliothèques
-
 Projet développé en Python avec :
 
 - Pandas
@@ -160,7 +147,6 @@ Projet développé en Python avec :
 ---
 
 ## Installation
-
 #### Cloner le repository
 ```bash
 git clone https://github.com/gaspard-l/Fraud-Detection.git
@@ -188,8 +174,6 @@ fraud_detection.ipynb
 ---
 
 ## Améliorations possibles
-
-
 - Optimisation des hyperparamètres
 
 - Déploiement API (Flask / FastAPI)
