@@ -32,6 +32,7 @@ Le projet est organisé en trois grandes parties :
 - Analyse du déséquilibre des classes
 - Séparation Train / Test
 - Normalisation des variables numériques via un pipeline
+
 La séparation train/test est effectuée avant la normalisation afin d’éviter toute fuite de données (data leakage).
 
 ### Premier modèle
@@ -58,7 +59,8 @@ Même méthodologie :
 - Entraînement
 - Optimisation du seuil
 - Comparaison des métriques
-- Matrice de confusion
+- Matrice de confusion 
+
 Une comparaison claire est réalisée afin d’identifier le modèle offrant le meilleur compromis métier.
 
 ---
@@ -68,7 +70,8 @@ Le dataset étant fortement déséquilibré, l’évaluation repose principaleme
 - Recall
 - F1-score
 - Matrice de confusion
-- AUC
+- AUC 
+
 Des techniques comme utilisée des poids (class_weight) pourraient être testées en amélioration future.
 
 ---
@@ -77,7 +80,8 @@ Des techniques comme utilisée des poids (class_weight) pourraient être testée
 Le seuil de classification n’est pas laissé à 0.5 par défaut. \
 Il est optimisé afin de :
 - Réduire les faux négatifs (fraudes non détectées)
-- Maintenir un taux acceptable de faux positifs
+- Maintenir un taux acceptable de faux positifs 
+
 Ce choix reflète une approche orientée enjeu métier plutôt que purement statistique.
 
 ---
@@ -86,7 +90,8 @@ Ce choix reflète une approche orientée enjeu métier plutôt que purement stat
 Une comparaison finale met en évidence :
 - Le modèle le plus performant
 - Le compromis recall / precision
-- L’impact du choix du seuil
+- L’impact du choix du seuil 
+
 Le modèle retenu est celui offrant le meilleur équilibre pour un contexte de fraude bancaire.
 
 ---
