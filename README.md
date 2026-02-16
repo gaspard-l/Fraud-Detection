@@ -27,121 +27,77 @@ Le projet est organisé en trois grandes parties :
 
 ### Préparation des données
 - Importation des bibliothèques
-
 - Chargement du dataset
-
 - Affichage de la forme générale et des premières lignes
-
 - Analyse du déséquilibre des classes
-
 - Séparation Train / Test
-
 - Normalisation des variables numériques via un pipeline
-
 La séparation train/test est effectuée avant la normalisation afin d’éviter toute fuite de données (data leakage).
 
 ### Premier modèle
 Étapes :
-
 - Création et entraînement du modèle
-
 - Prédictions probabilistes
-
 - Test d’un seuil initial à 0.3
-
 - Étude des métriques :
-
     - Accuracy
-
     - Precision
-
     - Recall
-
     - F1-score
-
     - AUC
-
-- Visualisation graphique pour déterminer le seuil optimal
-
+- Visualisation graphique pour déterminer le seuil optima
 - Recherche du seuil maximisant le F1-score
-
 - Analyse des variables les plus influentes
-
 - Matrice de confusion
 
 Objectif :
-
 Maximiser la détection des fraudes tout en limitant les faux positifs.
 
 ### Deuxième modèle
 Même méthodologie :
-
 - Entraînement
-
 - Optimisation du seuil
-
 - Comparaison des métriques
-
 - Matrice de confusion
-
 Une comparaison claire est réalisée afin d’identifier le modèle offrant le meilleur compromis métier.
 
 ---
 
 ## Gestion du déséquilibre
 Le dataset étant fortement déséquilibré, l’évaluation repose principalement sur :
-
 - Recall
-
 - F1-score
-
 - Matrice de confusion
-
 - AUC
-
 Des techniques comme utilisée des poids (class_weight) pourraient être testées en amélioration future.
 
 ---
 
 ## Choix Méthodologiques
-Le seuil de classification n’est pas laissé à 0.5 par défaut.
-
+Le seuil de classification n’est pas laissé à 0.5 par défaut. \
 Il est optimisé afin de :
-
 - Réduire les faux négatifs (fraudes non détectées)
-
 - Maintenir un taux acceptable de faux positifs
-
 Ce choix reflète une approche orientée enjeu métier plutôt que purement statistique.
 
 ---
 
 ## Résultats
 Une comparaison finale met en évidence :
-
 - Le modèle le plus performant
-
 - Le compromis recall / precision
-
 - L’impact du choix du seuil
-
 Le modèle retenu est celui offrant le meilleur équilibre pour un contexte de fraude bancaire.
 
 ---
 
 ## Bibliothèques
 Projet développé en Python avec :
-
 - Pandas
-
 - NumPy
-
 - Scikit-learn
-
 - Matplotlib
-
 - Seaborn
-
 - Jupyter Notebook
 
 ---
@@ -175,9 +131,7 @@ fraud_detection.ipynb
 
 ## Améliorations possibles
 - Optimisation des hyperparamètres
-
 - Déploiement API (Flask / FastAPI)
-
 - Monitoring des performances dans le temps
 
 ---
